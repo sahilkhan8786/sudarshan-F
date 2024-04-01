@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudarshan-Project</title>
+    <style>
+        /* CSS RESET */
+        * {
+            margin: 0;
+            padding: 0;
+            outline: none;
+            border: none;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+
+
+
+        :root {
+            --color-black: #000;
+            --color-white: #fff;
+            --color-primary: #00ffff;
+        }
+
+        .container {
+            max-width: 1546px;
+            margin: 0 auto;
+            margin-top: 4rem;
+            padding: 1rem;
+
+        }
+
+        .container .details-container {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .container .details-container h1 {
+            font-size: 3rem;
+            animation: heading-animation 0.5s linear forwards;
+        }
+
+        .container .details-container p {
+            font-size: 1.3rem;
+        }
+
+        .container .image-container {
+            margin-top: 1rem;
+            background: var(--color-primary);
+            height: 600px;
+        }
+
+        .container .btn-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .container .btn-container .btn {
+            font-size: 1.5rem;
+            padding: 1rem 2rem;
+            background: transparent;
+            transition: all 0.5s ease-in-out;
+            cursor: pointer;
+            border: 2px solid var(--color-primary);
+            box-shadow: inset 5px 5px 15px var(--color-primary);
+
+        }
+
+        .container .btn-container .btn:hover {
+            background: transparent;
+            box-shadow: 5px 5px 15px var(--color-primary);
+        }
+
+        iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+        @media screen and (max-width:1024px) {
+            .container {
+                margin-top: 1rem;
+            }
+
+            .container .details-container h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media screen and (max-width:425px) {
+            .container {
+                margin-top: 1rem;
+            }
+
+            .container .details-container {
+                gap: 01rem;
+            }
+
+            .container .details-container h1 {
+                font-size: 1.8rem;
+            }
+
+            .container .details-container p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="container">
+        <div class="details-container">
+            <h1>Learners of Today. Leaders of Tomorrow</h1>
+            <p>The all-in-one e-learning platform</p>
+        </div>
+        <div class="image-container">
+            <div class="sketchfab-embed-wrapper">
+                <iframe title="Laptop 3D Model" frameborder="0" allowfullscreen mozallowfullscreen="true"
+                    webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking
+                    execution-while-out-of-viewport execution-while-not-rendered web-share
+                    src="https://sketchfab.com/models/ba56c75ff9f4430da10cd3d283da7358/embed"> </iframe>
+
+            </div>
+        </div>
+        <div class="btn-container">
+            <button class="btn">View our courses</button>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
